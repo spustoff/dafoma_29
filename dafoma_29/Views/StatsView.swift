@@ -143,42 +143,48 @@ struct StatsView: View {
                     title: "Total Sessions",
                     value: "\(utilityService.playerStats.totalSessions)",
                     icon: "gamecontroller.fill",
-                    color: Color(red: 0.01, green: 0.47, blue: 0.99) // #0278fc
+                    color: Color(red: 0.01, green: 0.47, blue: 0.99), // #0278fc
+                    isIPad: false
                 )
                 
                 StatCard(
                     title: "Best Score",
                     value: "\(utilityService.playerStats.bestScore)",
                     icon: "star.fill",
-                    color: Color(red: 1.0, green: 0.97, blue: 0.03) // #fff707
+                    color: Color(red: 1.0, green: 0.97, blue: 0.03), // #fff707
+                    isIPad: false
                 )
                 
                 StatCard(
                     title: "Total Score",
                     value: "\(utilityService.playerStats.totalScore)",
                     icon: "sum",
-                    color: Color(red: 0.93, green: 0.0, blue: 0.29) // #ee004a
+                    color: Color(red: 0.93, green: 0.0, blue: 0.29), // #ee004a
+                    isIPad: false
                 )
                 
                 StatCard(
                     title: "Levels Completed",
                     value: "\(utilityService.playerStats.levelsCompleted)",
                     icon: "flag.fill",
-                    color: Color(red: 0.54, green: 0.71, blue: 0.02) // #54b702
+                    color: Color(red: 0.54, green: 0.71, blue: 0.02), // #54b702
+                    isIPad: false
                 )
                 
                 StatCard(
                     title: "Average Accuracy",
                     value: "\(Int(utilityService.playerStats.averageAccuracy * 100))%",
                     icon: "target",
-                    color: Color(red: 0.83, green: 0.0, blue: 0.93) // #d300ee
+                    color: Color(red: 0.83, green: 0.0, blue: 0.93), // #d300ee
+                    isIPad: false
                 )
                 
                 StatCard(
                     title: "Play Time",
                     value: formatPlayTime(utilityService.playerStats.totalPlayTime),
                     icon: "clock.fill",
-                    color: Color(red: 0.01, green: 0.47, blue: 0.99) // #0278fc
+                    color: Color(red: 0.01, green: 0.47, blue: 0.99), // #0278fc
+                    isIPad: false
                 )
             }
         }
@@ -509,3 +515,4 @@ struct AchievementRow: View {
 #Preview {
     StatsView()
 }
+

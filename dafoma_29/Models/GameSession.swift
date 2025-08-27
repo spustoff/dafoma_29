@@ -157,3 +157,4 @@ struct GestureStats: Codable {
         averageTime = totalTime / Double(timesPerformed)
     }
 }
+

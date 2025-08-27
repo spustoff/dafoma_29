@@ -327,3 +327,4 @@ struct OnboardingPage {
 #Preview {
     OnboardingView(gameViewModel: GameViewModel())
 }
+

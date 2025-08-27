@@ -253,3 +253,4 @@ struct Achievement: Identifiable {
     let icon: String
     let isUnlocked: Bool
 }
+
